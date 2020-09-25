@@ -19,8 +19,10 @@ export class AppComponent {
 
   public navBarItemClick(id) {
 
-    this.isCollapsed = !this.isCollapsed;
+    this.isCollapsed = true;
     document.getElementById(id).scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 
   }
+
+
 }
