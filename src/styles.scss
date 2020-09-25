@@ -27,6 +27,8 @@
 
 
 
+
+
 :root {
   --morado:#4056A1;
   --mostazaClaro: #EFe2BA;
@@ -181,12 +183,13 @@ sup {
 }
 
 a {
-  color: #4056a1;
+  color:$naranjaFuerte;
+
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #824027;
+  color:$purple;
   text-decoration: underline;
 }
 
@@ -413,7 +416,7 @@ h6, .h6 {
 }
 
 .lead {
-  font-size: 1.25rem;
+
   font-weight: 300;
 }
 
@@ -572,21 +575,27 @@ pre code {
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
+    font-size:1.5rem;
+ 
+
   }
 }
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+    font-size:2rem;
   }
 }
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+    font-size:2.5rem;
   }
 }
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
+    font-size:3rem;
   }
 }
 
@@ -10030,7 +10039,7 @@ body {
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 17rem;
+    padding-left: 27rem;
   }
 }
 h1,
@@ -10047,7 +10056,7 @@ h1 {
 }
 
 p.lead {
-  font-size: 1.15rem;
+ 
   font-weight: 400;
 }
 
@@ -10067,7 +10076,10 @@ p.lead {
   outline-color: #d48a6e;
 }
 
+
+
 @media (min-width: 992px) {
+  
   #sideNav {
     text-align: center;
     position: fixed;
@@ -10075,7 +10087,7 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 27rem;
     height: 100vh;
   }
   #sideNav .navbar-brand {
@@ -10105,6 +10117,10 @@ p.lead {
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
+}
+
+body{
+  font-size:1.5rem;
 }
 .social-icons .social-icon {
   display: inline-flex;

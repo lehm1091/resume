@@ -14,4 +14,13 @@ export class AppComponent {
   number = "(503) 7659 3328"
   email = "lehm1091@gmail.com"
   introduction = "Ingeniero de sistemas informáticos con experiencia previa como instructor de cursos técnicos de programación, y soporte técnico. Me apasiona la tecnología y el ambiente de desarrollo Full Stack. Y además tengo mucho interés en poder aportar mis habilidades a su empresa, por lo que estoy en la disposición de seguir mejorando y desarrollando mis conocimientos y aptitudes.";
+
+
+
+  public navBarItemClick(id) {
+
+    this.isCollapsed = !this.isCollapsed;
+    document.getElementById(id).scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+
+  }
 }

@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-custom fixed-top" id="sideNav">
     <a class="navbar-brand" href="#page-top">
-        <span class="d-block d-lg-none">Clarence Taylor</span>
+        <span class="d-block d-lg-none">{{name}} {{lastName}} </span>
         <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
                 src="assets/img/profile.jpg" alt="" /></span>
     </a>
@@ -14,16 +14,14 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent" [collapse]=isCollapsed>
         <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" (click)="isCollapsed = !isCollapsed"
-                    href="#about">Acerca de mi</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" (click)="isCollapsed = !isCollapsed"
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"
+                    (click)="navBarItemClick('about')">Acerca de mi</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" (click)="navBarItemClick('experience')"
                     href="#experience">Proyectos de Software</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" (click)="isCollapsed = !isCollapsed"
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" (click)="navBarItemClick('education')"
                     href="#education">FORMACIÓN ACADÉMICA</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" (click)="isCollapsed = !isCollapsed"
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" (click)="navBarItemClick('skills')"
                     href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" (click)="isCollapsed = !isCollapsed"
-                    href="#interests">Intereses</a></li>
         </ul>
     </div>
 </nav>
@@ -36,34 +34,77 @@
     <section class="resume-section" id="about">
 
 
-        <div class="resume-section-content">
+        <div class="resume-section-content ">
 
-            <div class="text-center"> <span class="d-lg-none w-50">
-                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg"
-                        alt="" /></span></div>
 
-            <h1 class="mb-0 d-lg-none text-center">
-                {{name}}
+            <div class="d-lg-none ">
 
-                <span class="text-primary">{{lastName}}</span>
-            </h1>
-            <h1 class="mb-0 d-none d-lg-block">
-                {{name}}
+                <div class="">
+                    <span class=" w-50">
+                        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg"
+                            alt="" /></span>
+                </div>
 
-                <span class="text-primary">{{lastName}}</span>
-            </h1>
-            <div class="subheading mb-5">
-                {{address}}
-                <a href="mailto:lehm1091@gmail.com">{{email}}</a>
+                <h1 class="mb-0 ">
+                    {{name}}
+                    <span class="text-primary">{{lastName}}</span>
+                </h1>
+                <div class="subheading mb-5 ">
+                    <span class="mr-1">{{address}}</span>
+
+                    <a href="mailto:lehm1091@gmail.com">{{email}}</a>
+
+
+                </div>
+
+
             </div>
-            <p class="lead mb-5">{{introduction}}</p>
+
+            <div class="  d-none d-lg-block">
+
+
+
+                <h1 class="mb-0 ">
+                    {{name}}
+                    <span class="text-primary">{{lastName}}</span>
+                </h1>
+                <div class="subheading mb-5 ">
+                    <span class="mr-1">{{address}}</span>
+
+                    <a href="mailto:lehm1091@gmail.com">{{email}}</a>
+
+
+
+
+                </div>
+
+            </div>
+
+            <p class="mb-5">{{introduction}}</p>
+
+
+
+
+
+
             <div class="social-icons">
-                <a class="social-icon" href="https://www.linkedin.com/in/luis-edgardo-hernandez-menendez-5a462511b/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="https://www.linkedin.com/in/luis-edgardo-hernandez-menendez-5a462511b/"><i
+                        class="fab fa-linkedin-in"></i></a>
                 <a class="social-icon" href="https://github.com/lehm1091"><i class="fab fa-github"></i></a>
                 <a class="social-icon" href="https://twitter.com/LuisHer26141875"><i class="fab fa-twitter"></i></a>
                 <a class="social-icon" href="https://www.facebook.com/lehm0"><i class="fab fa-facebook-f"></i></a>
             </div>
+            <p class="my-4">
+                <a class=""
+                    href="https://drive.google.com/file/d/1_f14kthyRWVgJagT61dZMWX8uOqgBlZB/view?usp=sharing">
+                    Curriculum Vitae
+                    <i class="fas fa-file-pdf"></i></a>
+            </p>
+
+
         </div>
+
+
     </section>
     <hr class="m-0" />
     <!-- Experience-->
@@ -95,7 +136,8 @@
 
                     </ul>
                 </div>
-                <div class="flex-shrink-0"><a class="card-link" href=""> Visitar ejemplo
+                <div class="flex-shrink-0"><a class="card-link" href="https://nutrition-app-lehm.herokuapp.com/">
+                        Visitar ejemplo
                     </a></div>
             </div>
 
@@ -214,7 +256,9 @@
                     <div>Ingeniería en Sistemas Informáticos</div>
                     <p>I30515</p>
                 </div>
-                <div class="flex-shrink-0"><span class="text-primary">Archivo Abjunto</span></div>
+                <div class="flex-shrink-0"><span class="text-primary"><a class="card-link"
+                            href="https://drive.google.com/file/d/1BT4a2n_NgacoQ1wkNcJ4lcDrE_Q86sJ3/view?usp=sharing">Archivo
+                            Adjunto</a></span></div>
             </div>
             <div class="d-flex flex-column flex-md-row justify-content-between">
                 <div class="flex-grow-1">
@@ -222,7 +266,9 @@
                     <div class="subheading mb-3">Bachillerato General</div>
                     <p></p>
                 </div>
-                <div class="flex-shrink-0"><span class="text-primary"></span>Archivo Abjunto</div>
+                <div class="flex-shrink-0"><span class="text-primary"><a class="card-link"
+                            href="https://drive.google.com/file/d/1cBxiEEkGQXG3KZAVPLQ-rHbEs1SI8_x0/view?usp=sharing">Archivo
+                            Adjunto</a></span></div>
             </div>
             <h2 class="my-5">Cursos, seminarios y otros</h2>
             <div class="d-flex flex-column flex-md-row justify-content-between">
@@ -357,12 +403,15 @@
     <section class="resume-section" id="interests">
         <div class="resume-section-content">
             <h2 class="mb-5">Intereses</h2>
-            <p>A parte de ser un desarollador web, disfruto del ejercicio y me interesa mucho llevar un estilo de vida saludable por lo que muchas veces me encuentro leyendo acerca del valor nutricional de los alimentos asi como llevando un registro de mis comidas diarias.</p>
+            <p>A parte de ser un desarollador web, disfruto del ejercicio y me interesa mucho llevar un estilo de vida
+                saludable por lo que muchas veces me encuentro leyendo acerca del valor nutricional de los alimentos asi
+                como llevando un registro de mis comidas diarias.</p>
             <p class="mb-0">
-                Me gusta mucho la tecnología, y cuando se trata de computadoras soy de los que prefieren armarlas ellos mismos a comprar equipos preensamblados.    </p>
+                Me gusta mucho la tecnología, y cuando se trata de computadoras soy de los que prefieren armarlas ellos
+                mismos a comprar equipos preensamblados. </p>
         </div>
     </section>
     <hr class="m-0" />
-  
-   
+
+
 </div>
