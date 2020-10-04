@@ -14,6 +14,7 @@
 
  @import "../node_modules/bootstrap/scss/bootstrap";
  $enable-gradients: true;
+ $enable-responsive-font-sizes:true;
  $morado:#4056A1;
  $mostazaClaro: #EFe2BA;
  $naranjaFuerte: #f13c20;
@@ -85,7 +86,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
